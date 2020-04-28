@@ -24,8 +24,6 @@ export const getMissingKeys = (data, mandatoryKeys) => {
 	const { object } = new TypeInsurance(data);
 	const { array } = new TypeInsurance(mandatoryKeys);
 
-	console.log(array);
-
 	return Object.entries(object)
 		.filter(
 			entry => (

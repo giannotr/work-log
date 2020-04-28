@@ -1,6 +1,6 @@
 import { validateDataSchema } from '../utilities/validate';
 
-const { constants, access, readFileSync, writeFileSync } = require('fs');
+const { access, readFileSync, writeFileSync } = require('fs');
 const electron = window.require('electron');
 const { remote } = electron;
 const { dialog } = remote;
@@ -13,7 +13,7 @@ const _byDate = (x1, x2) => {
 }
 
 export const readJSON = (path, setCallback) => {
-	access(path, constants.F_OK, (err) => {
+	access(path, (err) => {
 		if(err) {
 			writeJSON(path, []);
 		} else {
@@ -30,7 +30,7 @@ export const readJSON = (path, setCallback) => {
 					} else {
 						return false;
 					}
-				
+
 					return true;
 				} catch(err) {
 					console.error(err)

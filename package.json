@@ -1,7 +1,7 @@
 {
-  "name": "work-tracker",
+  "name": "work-log",
   "description": "Simple tool to keep track of work loads",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "main": "public/electron.js",
   "homepage": ".",
@@ -11,8 +11,8 @@
     "url": "http://rubengiannotti.com"
   },
   "build": {
-    "appId": "com.rubengiannotti.work-tracker",
-    "productName": "Work Tracker",
+    "appId": "com.rubengiannotti.work-log",
+    "productName": "Work.log",
     "copyright": "Copyright © 2020 Ruben Giannotti",
     "mac": {
       "category": "public.app-category.utilities"
@@ -41,7 +41,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
-    "type-insurance": "^1.1.3",
+    "type-insurance": "^1.2.3",
     "zero-fill": "^2.2.3"
   },
   "scripts": {

@@ -1,3 +1,3 @@
 # Work.log
 
-> Minimal tool to create reports of work loads
+> Simple tool to keep track of work loads
